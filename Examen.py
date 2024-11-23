@@ -319,14 +319,14 @@ class Scrapper(metaclass=Singleton):
             if (a.text.strip() != "" and a.text.strip() != "Jagdarmee" ):
                 Scrapper().quincys.append(a.text.strip())
             
-        print(Scrapper().quincys)
+        #print(Scrapper().quincys)
         return Scrapper.quincys
     
     
     def print_all_quincy(self):
         print('Nombre de Quincys: ')
         
-        print(Scrapper.quincys)
+        #print(Scrapper.quincys)
         for quincy in Scrapper.quincys:
             #numero de shinigamis para menu        
             
